@@ -1,0 +1,187 @@
+{
+  "fallback_responses": [
+    "Aku belum terlalu yakin dengan maksudmu, {name}. Coba jelaskan sedikit lebih spesifik.",
+    "Kalimat itu masih agak luas buatku. Coba beri detail tambahan ya, {name}.",
+    "Aku masih belajar memahami itu. Kalau kamu mau, tulis ulang dengan tujuan yang lebih jelas, {name}."
+  ],
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "halo",
+        "hai",
+        "hi",
+        "selamat pagi",
+        "selamat siang",
+        "selamat malam",
+        "halo ai",
+        "permisi"
+      ],
+      "responses": [
+        "Halo {name}, aku siap bantu. Mau ngobrol, belajar, atau bikin sesuatu?",
+        "Hai {name}, senang bisa ngobrol denganmu. Ada yang ingin kamu bahas?",
+        "Halo {name}, aku di sini dan siap menanggapi pernyataanmu."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "dadah",
+        "sampai jumpa",
+        "sampai nanti",
+        "aku pergi dulu",
+        "selamat tinggal"
+      ],
+      "responses": [
+        "Sampai ketemu lagi, {name}. Kalau mau lanjut, tinggal panggil aku lagi.",
+        "Baik, sampai nanti ya {name}. Semoga harimu lancar.",
+        "Dadah {name}, aku siap lanjut kapan pun kamu butuh."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "terima kasih",
+        "makasih",
+        "thanks",
+        "thank you",
+        "bantuanmu membantu",
+        "itu sangat membantu"
+      ],
+      "responses": [
+        "Sama-sama, {name}. Kalau mau lanjut, aku siap bantu lagi.",
+        "Senang bisa membantu, {name}. Lanjutkan saja kalau masih ada yang ingin dibahas.",
+        "Siap, {name}. Tinggal lanjut kapan pun kamu perlu bantuan."
+      ]
+    },
+    {
+      "tag": "identity",
+      "patterns": [
+        "siapa kamu",
+        "kamu siapa",
+        "apa kamu ai",
+        "kamu bot atau ai",
+        "jelaskan dirimu",
+        "what are you"
+      ],
+      "responses": [
+        "Aku AI lokal sederhana di project ini. Tugasku adalah memahami kalimatmu, mengenali maksudnya, lalu memberi jawaban yang relevan.",
+        "Aku bukan LLM besar seperti ChatGPT, tapi aku adalah chatbot lokal yang dilatih dari dataset intent agar bisa menanggapi pernyataanmu.",
+        "Aku asisten AI kecil di project ini. Aku fokus pada percakapan dasar, bantuan belajar, dan jawaban berbasis intent."
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "kamu bisa apa",
+        "apa yang bisa kamu lakukan",
+        "bisa bantu saya apa",
+        "fitur kamu apa",
+        "how can you help me",
+        "tolong jelaskan kemampuanmu"
+      ],
+      "responses": [
+        "Aku bisa menanggapi salam, menjawab pertanyaan dasar, memberi dukungan singkat, membantu belajar, dan memberi arahan coding secara sederhana, {name}.",
+        "Kemampuanku saat ini fokus pada percakapan dasar, bantuan belajar, saran coding, dan mengingat beberapa hal selama sesi chat, {name}.",
+        "Aku bisa menjadi chatbot lokal untuk menjawab pernyataanmu, menyimpan nama atau catatan kecil, dan memberi jawaban yang terasa seperti AI sederhana."
+      ]
+    },
+    {
+      "tag": "learning_help",
+      "patterns": [
+        "saya mau belajar",
+        "ajari saya machine learning",
+        "bantu saya belajar python",
+        "saya bingung belajar",
+        "tolong jelaskan materi",
+        "bagaimana cara belajar coding"
+      ],
+      "responses": [
+        "Tentu, {name}. Mulai dari tujuanmu dulu: mau belajar dasar, praktik proyek, atau persiapan kerja?",
+        "Bisa. Kalau kamu mau belajar efektif, kita pecah dulu topiknya jadi langkah kecil lalu latihan dari contoh nyata.",
+        "Aku bisa bantu belajar pelan-pelan, {name}. Kirim topik atau soalmu, nanti kita urai bersama."
+      ]
+    },
+    {
+      "tag": "coding_help",
+      "patterns": [
+        "bantu saya bikin kode",
+        "ada bug di program saya",
+        "tolong debug kode saya",
+        "jelaskan error ini",
+        "saya butuh bantuan coding",
+        "program saya error"
+      ],
+      "responses": [
+        "Siap, {name}. Kirim error, file, atau potongan kode, lalu kita perbaiki satu per satu.",
+        "Aku bisa bantu debug. Tunjukkan gejala error-nya, hasil yang diharapkan, dan potongan kode yang terkait.",
+        "Boleh. Kalau kamu kirim detail masalah coding-nya, aku bisa bantu analisis lalu usulkan perbaikan."
+      ]
+    },
+    {
+      "tag": "feeling_down",
+      "patterns": [
+        "saya sedih",
+        "aku capek",
+        "hari ini berat",
+        "saya stres",
+        "aku kecewa",
+        "saya merasa buruk"
+      ],
+      "responses": [
+        "Maaf hari ini terasa berat, {name}. Kalau mau, kamu bisa cerita pelan-pelan dan kita cari langkah kecil yang paling mungkin dulu.",
+        "Kedengarannya kamu lagi lelah. Tarik napas sebentar, lalu ceritakan bagian yang paling mengganggu buatmu, {name}.",
+        "Aku dengar kamu sedang tidak baik-baik saja. Kita bisa mulai dari satu hal kecil yang bisa dibenahi dulu."
+      ]
+    },
+    {
+      "tag": "feeling_good",
+      "patterns": [
+        "saya senang",
+        "aku bahagia",
+        "hari ini menyenangkan",
+        "aku semangat",
+        "saya bangga",
+        "aku merasa baik"
+      ],
+      "responses": [
+        "Wah, bagus sekali {name}. Energi seperti itu enak dipakai buat lanjut ke hal yang penting.",
+        "Senang dengarnya, {name}. Kalau mau, kita bisa pakai momentum ini buat belajar atau membangun sesuatu.",
+        "Itu kabar bagus. Semoga semangatmu terus terjaga, {name}."
+      ]
+    },
+    {
+      "tag": "motivation",
+      "patterns": [
+        "beri saya semangat",
+        "saya butuh motivasi",
+        "kasih kata penyemangat",
+        "motivasi dong",
+        "buat saya lebih semangat",
+        "saya kehilangan motivasi"
+      ],
+      "responses": [
+        "Kamu tidak harus menyelesaikan semuanya hari ini, {name}. Cukup mulai dari satu langkah kecil yang paling jelas.",
+        "Kemajuan kecil tetap kemajuan. Fokus ke langkah berikutnya saja, bukan semua langkah sekaligus, {name}.",
+        "Kalau terasa berat, kecilkan targetnya dulu. Yang penting tetap bergerak, {name}."
+      ]
+    },
+    {
+      "tag": "planning",
+      "patterns": [
+        "bantu saya menyusun rencana",
+        "saya bingung mulai dari mana",
+        "tolong bikin langkah kerja",
+        "buatkan rencana belajar",
+        "saya butuh roadmap",
+        "bagaimana saya mulai"
+      ],
+      "responses": [
+        "Bisa, {name}. Biasanya paling efektif kalau kita tentukan tujuan, batas waktu, lalu pecah menjadi langkah mingguan.",
+        "Mari kita sederhanakan dulu. Sebutkan targetmu, lalu aku bantu ubah jadi urutan langkah yang realistis.",
+        "Kalau bingung mulai dari mana, kita mulai dari hasil akhir yang kamu mau, lalu mundur ke langkah pertama yang paling kecil."
+      ]
+    }
+  ]
+}

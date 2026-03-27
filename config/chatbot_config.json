@@ -1,0 +1,10 @@
+{
+  "data_path": "chatbot_data/intents_id.json",
+  "model_path": "artifacts/chatbot_model.json",
+  "epochs": 450,
+  "learning_rate": 0.9,
+  "report_every": 50,
+  "min_word_frequency": 1,
+  "confidence_threshold": 0.28,
+  "seed": 17
+}
